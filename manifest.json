@@ -1,0 +1,13 @@
+{
+  "name": "Google Sheets Tab Search",
+  "description": "google sheets tab search dialog opened by shortcut key \"F5\"",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://docs.google.com/spreadsheets/*"],
+      "run_at": "document_idle",
+      "js": ["content-script.js"]
+    }
+  ]
+}
